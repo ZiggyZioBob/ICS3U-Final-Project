@@ -8,12 +8,26 @@
   </head>
   <body>
     <center>
-      <p>Testing testing TESTING</p>
-      <h1 id="Testing"></h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <button id="AMPMButton" onclick="AMPM()">AM/PM</button>
-      <button id="24HButton" onclick="t24H()">24H</button>
-      <button id="StopWatchButton" onclick="GotoStopwatch()">Stopwatch</button>
-      <button>Clock</button>
+      <button id="t24HButton" onclick="t24H()">24H</button>
+      <button id="StopWatchButton" onclick="location.href='Final Project 2.html'">Stopwatch</button>
+      <button id="ClockButton" onclick="location.href='Final Project.html'">Clock</button>
+      <br>
+      <table id="TheTable">
+        <tr>
+          <td align="left" id="Thetopleftstuff">EST</td>
+          <td align="left" id="Thetoprightstuff">24H</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" id="Themainstuff"><h1 id="Here">00:00:00</h1></td>
+        </tr>
+      </table>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
       <script src="scripts/Final Project.js"></script>
     </center>
   </body>

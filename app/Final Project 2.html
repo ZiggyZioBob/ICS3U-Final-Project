@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Stopwatch
+    </title>
+   <link rel="stylesheet" type="text/css" href="Final Project 2.css">
+  </head>
+  <body>
+    <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button id="StartButton" onclick="Start()">Start</button>
+      <button id="StopButton" onclick="Stop()">Stop</button>
+      <button id="StopWatchButton" onclick="location.href='Final Project 2.html'">Stopwatch</button>
+      <button id="ClockButton" onclick="location.href='Final Project.html'">Clock</button>
+      <br>
+      <table id="TheTable">
+        <tr>
+          <td align="left" id="Thetopleftstuff"><button id="InnerLapButton" onclick="Lap()">Lap</button></td>
+          <td align="left" id="Thetoprightstuff"><button id="InnerResetButton" onclick="Reset()">Reset</button></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" id="Themainstuff"><h1 id="Haha">0:00:00:00</h1></td>
+        </tr>
+      </table>
+      <p id="Lapdisplay"></p>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script>
+      <script src="scripts/Final Project 2.js"></script>
+    </center>
+  </body>
+
+</html>

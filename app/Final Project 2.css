@@ -9,13 +9,13 @@ table {
 	margin-top: 10px;
 }
 
-#AMPMButton {
+#StartButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
 }
 
-#t24HButton {
+#StopButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
@@ -37,8 +37,21 @@ table {
 }
 
 #Thetopleftstuff {
-	text-indent: 90px;
+	text-indent: 20px;
 }
+
 #Thetoprightstuff {
-	text-indent: 320px;
+	text-indent: 280px;
+}
+
+#InnerLapButton {
+	width: 150px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+#InnerResetButton {
+	width: 150px;
+	height: 40px;
+	margin-top: 10px;
 }
