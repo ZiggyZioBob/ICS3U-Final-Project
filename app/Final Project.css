@@ -1,5 +1,11 @@
+/*This is the css page for the clock page*/
+/*Most of the changes below affect the color, placement, and size of the buttons and boxes on the html page*/
 h1 {
 	font-size:100px;
+}
+
+body {
+	background: #4bfced;
 }
 
 table {
@@ -7,38 +13,49 @@ table {
 	width: 640px;
 	height: 300px;
 	margin-top: 10px;
+	background-color: #bff0ff;
 }
 
 #AMPMButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
+	background: linear-gradient(#b5edff,#14b0e0);
 }
 
 #t24HButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
+	background: linear-gradient(#ffb2f7,#ff30ea);
 }
 
 #StopWatchButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
+	background: linear-gradient(#fcabab,#fc5353);
 }
 
 #ClockButton {
 	width: 150px;
 	height: 100px;
+	background: linear-gradient(#bbff96,#4bc42d);
 }
 
 #Themainstuff {
 	height: 75%;
+	background-color: #bff0ff;
+	border-color: #bff0ff;
 }
 
 #Thetopleftstuff {
 	text-indent: 90px;
+	background-color: #bff0ff;
+	border-color: #bff0ff;
 }
 #Thetoprightstuff {
 	text-indent: 320px;
+	background-color: #bff0ff;
+	border-color: #bff0ff;
 }

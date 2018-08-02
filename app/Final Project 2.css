@@ -1,3 +1,5 @@
+/*This is the css page for the stopwatch page*/
+/*Most of the changes below affect the color, placement, and size of the buttons and boxes on the html page*/
 h1 {
 	font-size:100px;
 }
@@ -7,29 +9,38 @@ table {
 	width: 640px;
 	height: 300px;
 	margin-top: 10px;
+	background-color: #bff0ff;
+}
+
+body {
+	background: #fcde1e;
 }
 
 #StartButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
+	background: linear-gradient(#bbff96,#4bc42d);
 }
 
 #StopButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
+	background: linear-gradient(#fcabab,#fc5353);
 }
 
 #StopWatchButton {
 	width: 150px;
 	height: 100px;
 	margin-right: 10px;
+	background: linear-gradient(#d2daf2,#768bc9);
 }
 
 #ClockButton {
 	width: 150px;
 	height: 100px;
+	background: linear-gradient(#fffcb2,#c9c206);
 }
 
 #Themainstuff {
@@ -48,10 +59,34 @@ table {
 	width: 150px;
 	height: 40px;
 	margin-top: 10px;
+	background: #f9f361;
 }
 
 #InnerResetButton {
 	width: 150px;
 	height: 40px;
 	margin-top: 10px;
+	background: #64db4e;
+}
+
+#attempt {
+	text-align: top;
+}
+
+#LapfindButton {
+	width: 400px;
+	margin-top: 10px;
+	background: #1df9eb;
+}
+
+#LapResetButton {
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #4df918;
+}
+
+#Lapbox1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

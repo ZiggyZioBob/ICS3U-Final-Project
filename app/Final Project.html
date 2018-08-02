@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Here is the html portion of the clock page-->
 <html>
   <head>
     <title>
-      Clock
+      Clock<!--This is the title of this page-->
     </title>
-   <link rel="stylesheet" type="text/css" href="Final Project.css">
+   <link rel="stylesheet" type="text/css" href="Final Project.css"><!--This connects this page to the css page-->
   </head>
   <body>
     <center>
@@ -13,22 +13,22 @@
       <br>
       <br>
       <br>
-      <button id="AMPMButton" onclick="AMPM()">AM/PM</button>
-      <button id="t24HButton" onclick="t24H()">24H</button>
-      <button id="StopWatchButton" onclick="location.href='Final Project 2.html'">Stopwatch</button>
-      <button id="ClockButton" onclick="location.href='Final Project.html'">Clock</button>
+      <button id="AMPMButton" onclick="AMPM()"><h2>AM/PM</h2></button><!--This button changes the time to 12 hour AM/PM time-->
+      <button id="t24HButton" onclick="t24H()"><h2>24H</h2></button><!--This button changes the time to 24 hour time-->
+      <button id="StopWatchButton" onclick="location.href='Final Project 2.html'"><h2>Stopwatch</h2></button><!--This button takes the user to the stopwatch page-->
+      <button id="ClockButton" onclick="location.href='Final Project.html'"><h2>Clock</h2></button><!--This button takes the user to the clock page, which in this case would simply refresh the page-->
       <br>
-      <table id="TheTable">
+      <table id="TheTable"><!--This table hosts the changing variables-->
         <tr>
-          <td align="left" id="Thetopleftstuff">EST</td>
-          <td align="left" id="Thetoprightstuff">24H</td>
+          <td align="left" id="Thetopleftstuff"><h3>EST</h3></td><!--This identifies the time zone the user is in-->
+          <td align="left" id="Thetoprightstuff"><h3>24H</h3></td><!--This identifies the type of time the clock is currently displaying-->
         </tr>
         <tr>
-          <td colspan="2" align="center" id="Themainstuff"><h1 id="Here">00:00:00</h1></td>
+          <td colspan="2" align="center" id="Themainstuff"><h1 id="Here">00:00:00</h1></td><!--This is where the current time would be displayed-->
         </tr>
       </table>
-      <script type="text/javascript" src="scripts/jquery.min.js"></script>
-      <script src="scripts/Final Project.js"></script>
+      <script type="text/javascript" src="scripts/jquery.min.js"></script><!--This connects the page to the jquery page that allows for the use of jquery applications-->
+      <script src="scripts/Final Project.js"></script><!--This connects this page to the javascript page, that allows for actions to be preformed using the javascript-->
     </center>
   </body>
 

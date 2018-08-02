@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Here is the html portion of the stopwatch page-->
 <html>
   <head>
     <title>
-      Stopwatch
+      Stopwatch<!--This is the title of this page-->
     </title>
-   <link rel="stylesheet" type="text/css" href="Final Project 2.css">
+   <link rel="stylesheet" type="text/css" href="Final Project 2.css"><!--This connects this page to the css page-->
   </head>
   <body>
     <center>
@@ -13,31 +13,30 @@
       <br>
       <br>
       <br>
-      <button id="StartButton" onclick="Start()">Start</button>
-      <button id="StopButton" onclick="Stop()">Stop</button>
-      <button id="StopWatchButton" onclick="location.href='Final Project 2.html'">Stopwatch</button>
-      <button id="ClockButton" onclick="location.href='Final Project.html'">Clock</button>
+      <button id="StartButton" onclick="Start()"><h2>Start</h2></button><!--This is the Start button that starts the stopwatch-->
+      <button id="StopButton" onclick="Stop()"><h2>Stop</h2></button><!--This is the Stop button that stops the stopwatch-->
+      <button id="StopWatchButton" onclick="location.href='Final Project 2.html'"><h2>Stopwatch</h2></button><!--This is the button that takes the user to the stopwatch page, in this case it would simply refresh the page-->
+      <button id="ClockButton" onclick="location.href='Final Project.html'"><h2>Clock</h2></button><!--This is the button that takes the user to the clock page-->
       <br>
-      <table id="TheTable">
+      <table id="TheTable"><!--This is the table where the main display of the stopwatch and two more buttons are to be located-->
         <tr>
-          <td align="left" id="Thetopleftstuff"><button id="InnerLapButton" onclick="Lap()">Lap</button></td>
-          <td align="left" id="Thetoprightstuff"><button id="InnerResetButton" onclick="Reset()">Reset</button></td>
+          <td align="left" id="Thetopleftstuff"><button id="InnerLapButton" onclick="Lap()">Lap</button></td><!--Here we have the lap button used to make laps-->
+          <td align="left" id="Thetoprightstuff"><button id="InnerResetButton" onclick="Reset()">Reset</button></td><!--Here we have the reset button that resets the stopwatch and the laps if clicked and if the stopwatch is stopped-->
         </tr>
         <tr>
-          <td colspan="2" align="center" id="Themainstuff"><h1 id="Haha">0:00:00:00</h1></td>
+          <td colspan="2" align="center" id="Themainstuff"><h1 id="Haha">0:00:00:00</h1></td><!--Here is where the stopwatch time is to be displayed with an initial 0 placeholder-->
         </tr>
       </table>
-      <input type="text" id="Lapbox1" name="Where the first number in the range is inputed">
+      <input type="text" id="Lapbox1" name="Where the first number in the range is inputed"><!--here is the first textbox used to enter the first value of a user search into lap values-->
       <br>
-      <input type="text" id="Lapbox2" name="Where the second number in the range is inputed">
+      <input type="text" id="Lapbox2" name="Where the second number in the range is inputed"><!--Here is the other textbox that would be the end of the range of a user search into-->
       <br>
-      <button id="LapfindButton" onclick="FindLap()">Click here to find the range of laps as listed above</button>
+      <button id="LapfindButton" onclick="FindLap()">Click here to find the range of laps as listed above</button><!--This is used to find the range of laps as stated in the textboxes above-->
       <br>
-      <button id="LapResetButton" onclick="Return()">Click here to revert back to the full list of laps</button>
-      <p id="LapSearchDisplay"></p>
-      <p id="Lapdisplay"></p>
-      <script type="text/javascript" src="scripts/jquery.min.js"></script>
-      <script src="scripts/Final Project 2.js"></script>
+      <button id="LapResetButton" onclick="Return()">Click here to revert back to the full list of laps</button><!--This is used to revert back to the list of laps-->
+      <p id="Lapdisplay"></p><!--This is where the laps are displayed-->
+      <script type="text/javascript" src="scripts/jquery.min.js"></script><!--This is used to connect this to the jquery file-->
+      <script src="scripts/Final Project 2.js"></script><!--This is used to connect this page to the javascript page-->
     </center>
   </body>
 

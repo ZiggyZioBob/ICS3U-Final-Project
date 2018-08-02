@@ -13,8 +13,10 @@ var LapnumberCounter = 0;
 var Lapdisplayvalue = [];
 var ThisCounter = 0;
 var Counternow = "0:00:00:00";
-var y = 22;
+var y = 29;
 var x = 10;
+var z = 0;
+var q = 1;
 
 function Start() {
 	Runcounter = 1;
@@ -83,7 +85,7 @@ function Reset() {
 function Lap() {
 	if(Runcounter == 1){
 		LapnumberCounter = LapnumberCounter + 1;
-		ArrayLapDisplay = ArrayLapDisplay + "Lap " + LapnumberCounter + ": " + document.getElementById("Haha").innerHTML;
+		ArrayLapDisplay = ArrayLapDisplay + "<b>Lap " + LapnumberCounter + ": </b>" + document.getElementById("Haha").innerHTML;
 		ArrayLapDisplay = ArrayLapDisplay + "</br>";
 		Lapcounter = 1;
 		document.getElementById("Lapdisplay").innerHTML = ArrayLapDisplay;
@@ -100,11 +102,20 @@ function FindLap() {
 			y = y + 1;
 			x = x * 10;
 		}
-		Lapfindvalue1 = (Lapfindvalue1 - 1) * y - 9;
+		if(Lapfindvalue1 > 9){
+			z = 9;
+		}
+		Lapfindvalue1 = (Lapfindvalue1 - 1) * y - z;
 		do {
 			while(ThisCounter >= x){
 				y = y + 1;
 				x = x * 10;
+			}
+			if(q == 1){
+				if(Lapfindvalue1 > 9){
+					Lapfinvalue1 = Lapfindvalue1 - 4;
+					q = 0;
+				}
 			}
 			for(var m = 0; m < y; m++){
 				Lapdisplayvalue = Lapdisplayvalue + ArrayLapDisplay[Lapfindvalue1 + m];
@@ -115,8 +126,9 @@ function FindLap() {
 		document.getElementById("Lapdisplay").innerHTML = Lapdisplayvalue;
 		ThisCounter = 0;
 		Lapdisplayvalue = [];
-		y = 22;
+		y = 29;
 		x = 10;
+		q = 1;
 		document.getElementById("Lapbox1").value = "";
 		document.getElementById("Lapbox2").value = "";
 	}
